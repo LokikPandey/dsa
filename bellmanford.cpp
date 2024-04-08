@@ -12,7 +12,7 @@ vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
                 int v=e[1];
                 int u=e[0];
                 
-                if(dist[u]+wt<dist[v])
+                if(dist[u]!=1e8 and dist[u]+wt<dist[v])
                 {
                     dist[v]=dist[u]+wt;
                 }
@@ -29,7 +29,7 @@ vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
                 int v=e[1];
                 int u=e[0];
                 
-                if(dist[u]+wt<dist[v])
+                if(dist[u]!=1e8 and dist[u]+wt<dist[v])
                 {
                     cycle=true;
                     break;
