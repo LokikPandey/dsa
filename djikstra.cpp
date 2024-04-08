@@ -29,15 +29,21 @@ vector<int> djikstra(int V,vector<vector<int>> adj[],int S)
 
 int main()
 {
-    int V;
-    cin>>V;
+    int V,E;
+    cin>>V>>E;
     vector<vector<int>> g[V];
-    for(int i=0;i<V;i++)
-    {
-        int v,w;
-        cin>>v>>w;
-        g[i].push_back({v,w});
-    }
+    int i=0;
+        while(i++<V){
+            int u, v, w;
+            cin >> u >> v >> w;
+            vector<int> t1,t2;
+            t1.push_back(v);
+            t1.push_back(w);
+            g[u].push_back(t1);
+            t2.push_back(u);
+            t2.push_back(w);
+            g[v].push_back(t2);
+        }   
     vector<int> ans;
     ans=djikstra(V,g,0);
     for(auto i:ans) cout<<i<<" ";
