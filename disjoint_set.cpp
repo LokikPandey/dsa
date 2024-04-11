@@ -68,7 +68,7 @@ int main()
 
     if(ds.findpar(3)==ds.findpar(4))
     {
-        cout<<'same'<<endl;
+        cout<<"same"<<endl;
     }
     else cout<<"not same";
 
