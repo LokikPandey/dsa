@@ -1,0 +1,1 @@
+{"name":"Local: meetingroom","url":"c:\\Users\\uditp\\OneDrive\\Desktop\\Python codes\\cpp\\meetingroom.cpp","tests":[{"id":1714850014646,"input":"3\n0 30\n5 10\n10 15","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\uditp\\OneDrive\\Desktop\\Python codes\\cpp\\meetingroom.cpp","group":"local","local":true}
